@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — FastAPI Calculator</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Dashboard</h1>
+    <p class="subtitle">
+      Welcome back,
+      <span id="username" data-testid="username">…</span>.
+    </p>
+
+    <div id="user-panel" class="panel" data-testid="user-panel">
+      <dl class="kv">
+        <dt>User ID</dt><dd id="user-id" data-testid="user-id">—</dd>
+        <dt>Email</dt><dd id="user-email" data-testid="user-email">—</dd>
+        <dt>Joined</dt><dd id="user-created" data-testid="user-created">—</dd>
+      </dl>
+    </div>
+
+    <button
+      id="logout-btn"
+      class="btn btn-secondary"
+      data-testid="btn-logout"
+    >
+      Log out
+    </button>
+
+    <div
+      id="status"
+      class="status hidden"
+      role="status"
+      aria-live="polite"
+      data-testid="status"
+    ></div>
+  </main>
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
