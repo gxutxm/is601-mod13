@@ -181,6 +181,4 @@ Required repository secret: `DOCKERHUB_TOKEN` (Docker Hub Access Token with Read
 - Duplicate-registration attempts return `409 Conflict`, which is surfaced in the UI as a friendly message rather than leaking the raw `IntegrityError`.
 - Client-side validation is **not** the only line of defense — Pydantic enforces every constraint server-side too.
 
-## Reflection
 
-See `REFLECTION.md` for development notes and challenges.
